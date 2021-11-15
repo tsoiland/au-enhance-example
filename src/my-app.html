@@ -1,0 +1,9 @@
+<h1>Confirm binding behavior</h1>
+
+<h2>Aurelia instance injected</h2>
+<button click.delegate="confirmTest() & confirm:'Are you sure you want to test?':'testsdfgsdfg':true:false">Test with surrounding div (works)</button>
+<button click.delegate="confirmTest() & confirm:'Are you sure you want to test?':'testsdfgsdfg':false:false">Test without surrounding div (fails)</button>
+
+<h2>Static aurelia</h2>
+<button click.delegate="confirmTest() & confirm:'Are you sure you want to test?':'testsdfgsdfg':true:true">Test with surrounding div (fails)</button>
+<button click.delegate="confirmTest() & confirm:'Are you sure you want to test?':'testsdfgsdfg':false:true">Test without surrounding div (fails)</button>
